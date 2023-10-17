@@ -1,23 +1,7 @@
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React and Make Changes
-        </a>
-
-        <h1 className="text-3xl font-bold underline">
-          Hello world!
-        </h1>
-      </header>
+    <div class='bg-blue-300 h-screen flex items-center justify-center'>
+      <div class="w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 bg-white"></div>
     </div>
   );
 }
