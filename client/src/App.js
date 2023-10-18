@@ -1,7 +1,7 @@
 function App() {
   return (
-    <div class='bg-blue-300 h-screen flex items-center justify-center'>
-      <div class="w-48 h-48 sm:w-64 sm:h-64 md:w-96 md:h-96 bg-white"></div>
+    <div class='h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200'>
+      <h1 class="text-3xl text-red-500 sm:text-blue-500">TEST</h1>
     </div>
   );
 }
