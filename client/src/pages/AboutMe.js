@@ -1,19 +1,42 @@
 import React from 'react';
-import penguin from '../img/littlePenguin.jpg';
-import dots from '../img/dots.png';
+import penguin from '../img/littlePenguin.png';
 
 function AboutMe() {
   return (
-    <div class="container mx-auto flex">
+    <div class="container mx-auto py-40 flex gap-20">
       {/* Left Side */}
-      <div class="relative">
-        <img src={dots} class="h-1/4 top-0 left-0 absolute" alt="dots for corner design" />
-        <div class="h-full rounded-full overflow-hidden">
-          <img src={penguin} alt="Eric Song" />
+      <div id="left-side-about" class="hidden md:relative md:flex">
+        <div class="rounded-full overflow-hidden">
+        <div class="relative -bottom-1/4 right-0 left-0 mx-auto w-big h-big -z-10 bg-indigo-500 rounded-full" />
+          <img class="h-full w-full" src={penguin} alt="Eric Song" />
         </div>
       </div>
-      Hello
       {/* Right Side */}
+      <div id="right-side-about" class="my-auto flex flex-col gap-2 m-10 md:m-0">
+        <h1 class="text-indigo-600 bold">ABOUT ME</h1>
+        <h1 class="font-medium text-3xl">IPSEM</h1>
+        <h1 class="font-medium text-3xl">LOREM</h1>
+        <p class="text-gray-400 break-words">
+          Experienced and passionate engineer who worked 6 years in the aerospace and nuclear
+          industries. Is now looking for new opportunities in app and software development.
+          Working in research and development has given me a strong
+          communicative skill set as well as the ability to analyze problems effectively,
+          using fundamental engineering principles. Utilizing my experience,
+          I can learn and adapt to new changes in any fast-paced environment while also
+          solving unique problems in the tech industry
+        </p>
+        <div id="skills-list">
+          <h2 class="font-medium text-xl">SKILLS:</h2>
+          <ul class="md:flex md:space-x-4 text-orange-300 font-bold text-small uppercase break-words">
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JAVASCRIPT</li>
+            <li>RUBY</li>
+            <li>REACTJS</li>
+            <li>RUBY ON RAILS</li>
+          </ul>
+        </div>
+      </div>
     </div>
   )
 }
