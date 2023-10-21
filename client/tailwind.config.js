@@ -6,7 +6,10 @@ module.exports = {
   theme: {
     extend: {
       screens: {
-        "sm": "480px"
+        "sm": "680px"
+      },
+      spacing: {
+        "big": "48rem"
       }
     },
     fontFamily:{

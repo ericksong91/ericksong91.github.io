@@ -8,7 +8,7 @@ function Navbar() {
     const [hamburger, setHamburger] = useState(true);
 
     return (
-        <nav id="navbar" class="w-full fixed top-0">
+        <nav id="navbar" class="w-full bg-white fixed top-0 z-10">
             <div id="navbar-container" class="container mx-auto py-5 flex items-center justify-between">
                 <div id="navbar-logo-container" class="flex items-center gap-2">
                     <img id="logo" class="object-cover w-8" src={logo} alt="logo" />
