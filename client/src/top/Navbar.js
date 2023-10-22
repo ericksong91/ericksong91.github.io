@@ -11,7 +11,7 @@ function Navbar() {
         <nav id="navbar" class="w-full bg-white fixed top-0 z-10">
             <div id="navbar-container" class="container mx-auto py-5 flex items-center justify-between">
                 <div id="navbar-logo-container" class="flex items-center gap-2">
-                    <img id="logo" class="object-cover w-8 ml-2" src={logo} alt="logo" />
+                    <img id="logo" class="object-cover w-8 ml-5" src={logo} alt="logo" />
                     <ul id="site-name">
                         <li class='text-2xl font-bold text-indigo-900'>Portfolio</li>
                         <li class="text-small text-indigo-400">Eric Song</li>
@@ -31,7 +31,7 @@ function Navbar() {
                         <Link to={'/'}>Contacts</Link>
                     </li>
                 </ul>
-                <img id="navbar-dark-light-toggle" src={moon} class="hidden md:block w-5 cursor-pointer mr-3" alt="toggle dark light modes" />
+                <img id="navbar-dark-light-toggle" src={moon} class="hidden md:block w-5 cursor-pointer mr-5" alt="toggle dark light modes" />
 
                 {hamburger ?
                     <div id="hamburger" class="space-y-1 md:hidden cursor-pointer pr-3" onClick={() => setHamburger(!hamburger)}>

@@ -12,9 +12,7 @@ function App() {
           {/* Begin Introduction, with Animated Text, Profile Image and Introduction Blurb */}
           <Introduction />
         </div>
-        <div id="about-me">
-          <AboutMe />
-        </div>
+        <AboutMe />
       </div>
     </div>
   );
