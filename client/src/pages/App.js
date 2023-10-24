@@ -1,6 +1,8 @@
 import Navbar from "../top/Navbar";
 import Introduction from "./Introduction";
 import AboutMe from "./AboutMe";
+import Services from "./Services";
+import Portfolio from "./Portfolio";
 
 function App() {
   return (
@@ -13,6 +15,8 @@ function App() {
           <Introduction />
         </div>
         <AboutMe />
+        <Services />
+        <Portfolio />
       </div>
     </div>
   );
