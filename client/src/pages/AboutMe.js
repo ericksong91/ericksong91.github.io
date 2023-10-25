@@ -3,11 +3,11 @@ import penguin from '../img/crestPenguin.jpg';
 
 function AboutMe() {
   return (
-    <div id="about-me" className="dark:bg-slate-900" >
-      <div className="container mx-auto py-40 flex flex-col-reverse xl:flex-row items-center gap-20">
+    <div id="about-me" className="px-10 dark:bg-slate-900" >
+      <div className="container mx-auto py-28 flex flex-col-reverse xl:flex-row items-center gap-20">
         {/* Left Side */}
         <div id="left-side-about" className="relative">
-          <div className="h-full rounded-full overflow-hidden">
+          <div className="h-full rounded-full overflow-hidden md:w-96">
             <img src={penguin} alt="Eric Song" />
           </div>
         </div>
