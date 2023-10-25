@@ -3,7 +3,7 @@ import penguin from '../img/crestPenguin.jpg';
 
 function AboutMe() {
   return (
-    <div id="about-me-container" class="px-10" >
+    <div id="about-me" class="px-10" >
       <div class="container mx-auto py-40 flex flex-col-reverse xl:flex-row items-center gap-20">
         {/* Left Side */}
         <div id="left-side-about" class="relative">

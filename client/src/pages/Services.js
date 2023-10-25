@@ -3,7 +3,7 @@ import ServiceCard from '../cards/ServiceCard';
 
 function Services() {
     return (
-        <div id="services">
+        <div id="services" class="py-28">
             <div id="service-overview" class="flex flex-col gap-3 items-center">
                 <h1 class="text-indigo-600 font-bold">SERVICES</h1>
                 <h1 class="text-3xl">What can I offer?</h1>

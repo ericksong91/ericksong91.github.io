@@ -3,7 +3,7 @@ import ProjectCard from '../cards/ProjectCard';
 
 function Portfolio() {
   return (
-    <div id="projects">
+    <div id="portfolio" class="py-28">
     <div id="project-overview" class="flex flex-col gap-3 items-center">
         <h1 class="text-indigo-600 font-bold">PORTFOLIO</h1>
         <h1 class="text-3xl">WORKS & PROJECTS</h1>

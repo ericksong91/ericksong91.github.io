@@ -17,18 +17,21 @@ function Navbar() {
                         <li class="text-small text-indigo-400">Eric Song</li>
                     </ul>
                 </div>
-                <ul id="navbar-links-container" class="hidden md:flex space-x-10 text-gray-600 font-bold text-small uppercase">
+                <ul id="navbar-links-container" class="hidden md:flex space-x-10 text-gray-600 lg:text-base md:text-sm font-bold uppercase">
                     <li class="hover:text-gray-500">
-                        <Link to={'/'}>Homepage</Link>
+                        <a href="#top">Homepage</a>
                     </li>
                     <li class="hover:text-gray-500">
-                        <Link to={'/'}>About Me</Link>
+                        <a href="#about-me">About Me</a>
                     </li>
                     <li class="hover:text-gray-500">
-                        <Link to={'/'}>Projects</Link>
+                        <a href="#services">Services</a>
                     </li>
                     <li class="hover:text-gray-500">
-                        <Link to={'/'}>Contacts</Link>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="hover:text-gray-500">
+                        <a href="#contact-me">Contacts</a>
                     </li>
                 </ul>
                 <img id="navbar-dark-light-toggle" src={moon} class="hidden md:block w-5 cursor-pointer mr-5" alt="toggle dark light modes" />
@@ -51,16 +54,19 @@ function Navbar() {
                     :
                     <ul id="menu" class="bg-indigo-900 absolute left-0 top-0 w-full p-10 rounded-b-3xl space-y-10 text-white text-center">
                         <li>
-                            <Link to={'/'}>Homepage</Link>
+                            <a onClick={() => setHamburger(true)} href="#top">Homepage</a>
                         </li>
                         <li>
-                            <Link to={'/'}>About Me</Link>
+                            <a onClick={() => setHamburger(true)} href="#about-me">About Me</a>
                         </li>
                         <li>
-                            <Link to={'/'}>Projects</Link>
+                            <a onClick={() => setHamburger(true)} href="#services">Services</a>
                         </li>
                         <li>
-                            <Link to={'/'}>Contacts</Link>
+                            <a onClick={() => setHamburger(true)} href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a onClick={() => setHamburger(true)} href="#contact-me">Contacts</a>
                         </li>
                     </ul>
                 }
