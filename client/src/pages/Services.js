@@ -3,10 +3,10 @@ import ServiceCard from '../cards/ServiceCard';
 
 function Services() {
     return (
-        <div id="services" class="py-28">
+        <div id="services" class="py-28 dark:bg-slate-900">
             <div id="service-overview" class="flex flex-col gap-3 items-center">
                 <h1 class="text-indigo-600 font-bold">SERVICES</h1>
-                <h1 class="text-3xl">What can I offer?</h1>
+                <h1 class="text-3xl dark:text-white">What can I offer?</h1>
                 <p class="w-1/2 text-center text-gray-400">
                     Ipsem Lorem asdfiojaoibj sfgoibj sgoijs bsoifjgboisjg oisjgfboisjgb
                     oisjgb boisjgb boijgb doifjvsodifjvsodiffjvoi sdofivjsodfjv oidfjvvoijsdfvo isjfvo

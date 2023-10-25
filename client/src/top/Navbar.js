@@ -2,22 +2,27 @@ import React from 'react'
 import { useState } from 'react';
 import logo from '../img/logo.png'
 import moon from '../img/moon.png'
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 function Navbar() {
     const [hamburger, setHamburger] = useState(true);
+    const body = document.querySelector("body");
+
+    function darkToggle() {
+        body.classList.toggle("dark");
+    };
 
     return (
-        <nav id="navbar" class="w-full bg-white fixed top-0 z-10">
+        <nav id="navbar" class="w-full bg-white fixed top-0 z-10 dark:bg-slate-900">
             <div id="navbar-container" class="container mx-auto py-5 flex items-center justify-between">
                 <div id="navbar-logo-container" class="flex items-center gap-2">
                     <img id="logo" class="object-cover w-8 ml-5" src={logo} alt="logo" />
                     <ul id="site-name">
-                        <li class='text-2xl font-bold text-indigo-900'>Portfolio</li>
+                        <li class='text-2xl font-bold text-indigo-900 dark:text-white'>Portfolio</li>
                         <li class="text-small text-indigo-400">Eric Song</li>
                     </ul>
                 </div>
-                <ul id="navbar-links-container" class="hidden md:flex space-x-10 text-gray-600 lg:text-base md:text-sm font-bold uppercase">
+                <ul id="navbar-links-container" class="hidden md:flex space-x-10 text-gray-600 dark:text-gray-100 lg:text-base md:text-sm font-bold uppercase">
                     <li class="hover:text-gray-500">
                         <a href="#top">Homepage</a>
                     </li>
@@ -34,7 +39,7 @@ function Navbar() {
                         <a href="#contact-me">Contacts</a>
                     </li>
                 </ul>
-                <img id="navbar-dark-light-toggle" src={moon} class="hidden md:block w-5 cursor-pointer mr-5" alt="toggle dark light modes" />
+                <img id="navbar-dark-light-toggle" src={moon} class="hidden md:block w-5 cursor-pointer mr-5" alt="toggle dark light modes" onClick={() => darkToggle()} />
 
                 {hamburger ?
                     <div id="hamburger" class="space-y-1 md:hidden cursor-pointer pr-3" onClick={() => setHamburger(!hamburger)}>
