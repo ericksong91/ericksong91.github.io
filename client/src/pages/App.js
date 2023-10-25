@@ -9,17 +9,15 @@ import Footer from "../top/Footer";
 function App() {
   return (
     <div id="app-container">
-      <div id="navbar-intro-container" className="h-screen">
-        <div className="h-1/2 lg:h-screen bg-gradient-to-t from-indigo-200 dark:from-slate-800 dark:to-slate-900 relative overflow-hidden">
-          <Navbar />
-          <Introduction />
-        </div>
+      <Navbar />
+      <div id="app-body">
+        <Introduction />
+        <AboutMe />
+        <Services />
+        <Portfolio />
+        <Contact />
+        <Footer />
       </div>
-      <AboutMe />
-      <Services />
-      <Portfolio />
-      <Contact />
-      <Footer />
     </div>
   );
 };

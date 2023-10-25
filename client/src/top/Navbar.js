@@ -43,9 +43,9 @@ function Navbar() {
 
                 {hamburger ?
                     <div id="hamburger" className="space-y-1 md:hidden cursor-pointer pr-3" onClick={() => setHamburger(!hamburger)}>
-                        <div className="w-6 h-0.5 bg-black"></div>
-                        <div className="w-6 h-0.5 bg-black"></div>
-                        <div className="w-6 h-0.5 bg-black"></div>
+                        <div className="w-6 h-0.5 bg-black dark:bg-white"></div>
+                        <div className="w-6 h-0.5 bg-black dark:bg-white"></div>
+                        <div className="w-6 h-0.5 bg-black dark:bg-white"></div>
                     </div>
                     :
                     <div id="hamburger" className="space-y-1 md:hidden cursor-pointer pr-3 z-20" onClick={() => setHamburger(!hamburger)}>
