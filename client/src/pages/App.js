@@ -4,6 +4,7 @@ import AboutMe from "./AboutMe";
 import Services from "./Services";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
+import Footer from "../top/Footer";
 
 function App() {
   return (
@@ -13,11 +14,12 @@ function App() {
           <Navbar />
           <Introduction />
         </div>
-        <AboutMe />
-        <Services />
-        <Portfolio />
-        <Contact />
       </div>
+      <AboutMe />
+      <Services />
+      <Portfolio />
+      <Contact />
+      <Footer />
     </div>
   );
 };
