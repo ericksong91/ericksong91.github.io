@@ -4,23 +4,20 @@ import { useEffect, useState } from 'react'
 const ThemeContext = React.createContext();
 
 function ThemeProvider({ children }) {
-    const body = document.querySelector("body");
     const [theme, setTheme] = useState(localStorage.theme);
-    const colorTheme = theme === "dark" ? "light" : "dark";
-
-    console.log(colorTheme, "colorTheme");
-    console.log(theme, "theme");
+    const body = document.querySelector("body");
 
     useEffect(() => {
-        body.classList.remove(colorTheme);
-        body.classList.add(theme);
+        theme === 'dark' ? body.classList.add('dark') : body.classList.remove('dark')
         localStorage.setItem('theme', theme);
-    }, [theme, colorTheme]);
+    }, [theme, body]);
 
-    console.log(localStorage.theme);
+    function darkToggle() {
+        theme === 'dark' ? setTheme("light") : setTheme("dark");
+    };
 
     return (
-        <ThemeContext.Provider value={{ theme }}>
+        <ThemeContext.Provider value={{ darkToggle }}>
             {children}
         </ThemeContext.Provider>
     );

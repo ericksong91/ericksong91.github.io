@@ -1,19 +1,16 @@
 import React from 'react'
-import { useState } from 'react';
-import logo from '../img/logo.png'
-import moon from '../img/moon.png'
+import { useState, useContext } from 'react';
+import { ThemeContext } from '../context/theme';
+import logo from '../img/logo.png';
+import moon from '../img/moon.png';
 // import { Link } from 'react-router-dom';
 
 function Navbar() {
+    const { darkToggle } = useContext(ThemeContext);
     const [hamburger, setHamburger] = useState(true);
-    const body = document.querySelector("body");
-
-    function darkToggle() {
-        body.classList.toggle("dark");
-    };
 
     return (
-        <nav id="navbar" className="w-full bg-white fixed top-0 z-10 dark:bg-slate-900">
+        <nav id="navbar" className="w-full bg-white fixed top-0 z-10 dark:bg-slate-900 transition-colors duration-1000">
             <div id="navbar-container" className="container mx-auto py-5 flex items-center justify-between">
                 <div id="navbar-logo-container" className="flex items-center gap-2">
                     <img id="logo" className="object-cover w-8 ml-5" src={logo} alt="logo" />
