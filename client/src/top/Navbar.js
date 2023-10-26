@@ -10,7 +10,7 @@ function Navbar() {
     const [hamburger, setHamburger] = useState(true);
 
     return (
-        <nav id="navbar" className="w-full bg-white fixed top-0 z-10 dark:bg-slate-900 transition-colors duration-1000">
+        <nav id="navbar" className="w-full bg-white fixed top-0 z-10 dark:bg-slate-900 transition-colors duration-700">
             <div id="navbar-container" className="container mx-auto py-5 flex items-center justify-between">
                 <div id="navbar-logo-container" className="flex items-center gap-2">
                     <img id="logo" className="object-cover w-8 ml-5" src={logo} alt="logo" />

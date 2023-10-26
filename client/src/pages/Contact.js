@@ -7,7 +7,7 @@ function Contact() {
     };
 
     return (
-        <div id="contact-me" className="dark:bg-slate-900 py-28">
+        <div id="contact-me" className="dark:bg-slate-900 py-28 transition-color duration-1000">
             <div className="container mx-auto">
                 <div className="flex flex-col gap-3 items-center">
                     <h1 className="text-indigo-600 font-bold dark:text-white">CONTACT ME</h1>
