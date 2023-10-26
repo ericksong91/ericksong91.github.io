@@ -12,7 +12,7 @@ function Services() {
                     oisjgb boisjgb boijgb doifjvsodifjvsodiffjvoi sdofivjsodfjv oidfjvvoijsdfvo isjfvo
                 </p>
             </div>
-            <div id="service-cards" className="p-5 sm:p-0 flex flex-wrap justify-between">
+            <div id="service-cards" className="p-5 flex flex-wrap md:flex-row justify-between">
                 <ServiceCard />
                 <ServiceCard />
                 <ServiceCard />
