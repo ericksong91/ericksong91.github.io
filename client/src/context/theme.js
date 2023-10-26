@@ -17,7 +17,7 @@ function ThemeProvider({ children }) {
     };
 
     return (
-        <ThemeContext.Provider value={{ darkToggle }}>
+        <ThemeContext.Provider value={{ theme, darkToggle }}>
             {children}
         </ThemeContext.Provider>
     );
