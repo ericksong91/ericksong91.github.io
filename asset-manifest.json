@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/static/css/main.dc16641a.css",
-    "main.js": "/static/js/main.c2c37ad6.js",
+    "main.css": "/static/css/main.4838ac24.css",
+    "main.js": "/static/js/main.add0ebe2.js",
     "static/js/787.c4e7f8f9.chunk.js": "/static/js/787.c4e7f8f9.chunk.js",
     "static/media/crestPenguin.jpg": "/static/media/crestPenguin.c765670cfe59ff154f87.jpg",
     "static/media/humboldt.png": "/static/media/humboldt.b447139dbfb0ec9c6e37.png",
     "static/media/logo.png": "/static/media/logo.55bfee9fd4bc57cba3cc.png",
     "static/media/placeholder_icon.png": "/static/media/placeholder_icon.55bfee9fd4bc57cba3cc.png",
     "index.html": "/index.html",
-    "main.dc16641a.css.map": "/static/css/main.dc16641a.css.map",
-    "main.c2c37ad6.js.map": "/static/js/main.c2c37ad6.js.map",
+    "main.4838ac24.css.map": "/static/css/main.4838ac24.css.map",
+    "main.add0ebe2.js.map": "/static/js/main.add0ebe2.js.map",
     "787.c4e7f8f9.chunk.js.map": "/static/js/787.c4e7f8f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.dc16641a.css",
-    "static/js/main.c2c37ad6.js"
+    "static/css/main.4838ac24.css",
+    "static/js/main.add0ebe2.js"
   ]
 }
