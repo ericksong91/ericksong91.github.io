@@ -15,6 +15,9 @@ module.exports = {
       spacing: {
         "big-w": "58rem",
         "big-h": "29rem"
+      },
+      rounded: {
+        "slider": "34px"
       }
     },
     fontFamily: {
@@ -32,10 +35,3 @@ module.exports = {
   },
   plugins: [],
 }
-
-// screens: {
-//   "sm": "680px",
-//   "md": "768px",
-//   "lg": "1024px",
-//   "xl":"1280px"
-// }

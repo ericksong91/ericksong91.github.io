@@ -78,10 +78,11 @@ function Navbar() {
                             <a onClick={() => setHamburger(true)} href="#contact-me">Contacts</a>
                         </li>
                         <li>
-                            <label class="relative inline-flex items-center cursor-pointer">
-                                <input type="checkbox" value="" class="sr-only" />
-                                    <div class="w-11 h-6 rounded-full"></div>
-                                    <span class="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">Toggle me</span>
+                            <label className="relative inline-flex items-center cursor-pointer">
+                                <input type="checkbox" className="sr-only peer" />
+                                <span className="block rounded-full h-full z-10 bg-black"></span>
+                                <div className="w-11 h-6 rounded-full bg-gray-500 absolute cursor-pointer top-0 left-0 right-0 bottom-0 peer-checked:bg-blue-600"></div>
+                                <span className="ml-3 text-sm font-medium text-gray-900 dark:text-gray-300">{theme === 'dark' ? "Light Mode" : "Dark Mode"}</span>
                             </label>
                         </li>
                     </ul>
