@@ -13,7 +13,8 @@ module.exports = {
         "xl": "1280px"
       },
       spacing: {
-        "big": "48rem"
+        "big-w": "58rem",
+        "big-h": "29rem"
       }
     },
     fontFamily: {
